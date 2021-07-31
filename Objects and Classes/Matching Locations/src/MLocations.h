@@ -1,0 +1,70 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
+
+typedef std::vector <std::string> stringVector;
+
+class Helper{
+    public:
+    void removeComas(std::string &input){
+        for (auto it = input.begin(); it != input.end(); it++){
+            if(*it==',') *it = ' ';
+        }
+    }
+};
+Helper helper;
+
+class Locations {
+    public:
+    Locations (){
+        std::string city = 0;
+        std::string latitude = 0;
+        std::string longitude = 0;
+    }
+    Locations (std::string input){
+
+        std::stringstream str(input);
+        getline(str, city, ',');
+        getline(str, latitude, ',');
+        getline(str, longitude, ',');
+        
+    }
+    ~Locations() {
+
+    }
+
+    void printMatch(std::string query){
+        if(this->checkEntry(query)){
+            std::cout << city << ',' << latitude << ',' << longitude << '\n';
+        }
+    }
+
+
+    private:
+    std::string city, latitude, longitude;
+
+
+    bool checkEntry(std::string query){
+        std::stringstream str(query);
+        stringVector data;
+        std::string token;
+
+        while (str >> token){
+            data.push_back(token);
+        }
+
+        if(data.size() > 1 
+        && data[0] == latitude
+        && data[1] == longitude
+        ) {
+            return true;
+        }
+        else{
+            if(data[0] == city) return true;  
+        } 
+
+        return false;
+    }
+
+};

@@ -22,11 +22,11 @@ Don&#39;t worry about the name too much, just make sure the number and the file 
 
 Tasks 4 in this homework requires you to be creative about the implementation. It simulates real-world examples of non-strict and sometimes vague descriptions of client requirements. Part of the exercise is to learn to convert paragraphs of text into classes which solve the needs described in the paragraphs, and writing code which is easily modified if, for example, the format of the input/output data changes slightly. Also note that some of these exercises mention e.g. &quot;array&quot; or &quot;string&quot; and so on – do not take these literally, you can use any data structures you find appropriate.
 
-1.
+
 # Homework
 
-1.
-# Sentence Shifter
+
+# 1. Sentence Shifter
 
 You are given a **list of words** in one line. On the other line you are given a **simple integer**.
 
@@ -44,8 +44,7 @@ Each word is printed on a different line.
 | --- | --- |
 | Welcome to SoftUni and have fun learning programming2 | learningprogrammingWelcometoSoftUniandhavefun |
 
-1.
-# Distance
+# 2. Distance
 
 Write a program to calculate the (Euclidean) distance between two points **p**** 1 **{** x ****1** , **y**** 1 **} and** p ****2** { **x**** 2 **,** y ****2** }. You should write a class to represent such points and a method in it which calculates the distance from the point to another point.
 
@@ -57,8 +56,8 @@ Write a program to calculate the (Euclidean) distance between two points **p****
 | 3 45 4 | 2.000 |
 | 8 -2-1 5 | 11.402 |
 
-1.
-# Sales
+
+# 3. Sales
 
 Write a class **Sale** holding the following data: **town** , **product** , **price** , **quantity**. Read a **list of sales** and calculate and print the **total sales by town** as shown in the output. Order the towns **alphabetically** in the output.
 
@@ -106,8 +105,8 @@ Average – 4.5
 | --- | --- |
 | 2MariaIvanova3.5DraganIvanov4.5 | Maria Ivanova 3.5Dragan Ivanov 4.54 |
 
-1.
-# Memory\* (not included in the homework)
+
+# 4. Memory\* (not included in the homework)
 
 You are given program in an **MemoryMain.cpp** , as well as a **Company.h** file, that read information about **companies** and writes it to the console.
 
@@ -174,11 +173,11 @@ NOTE: you are also given the code for the test generator used to generate the te
 | 42 117 110 105 0 2 73 75 83 78 13 106 111 114 111 0 1 71 71end | 42 uni (I.K.,S.N.)13 joro (G.G.) |
 | 188 105 99 121 104 97 0 3 66 81 72 80 70 8358 117 97 100 101 108 0 3 83 65 67 72 76 84end | 188 icyha (B.Q.,H.P.,F.S.)58 uadel (S.A.,C.H.,L.T.) |
 
-1.
+
 # Excluded from Homework
 
-1.
-# Astronomical Objects\*\*(not included in the homework)
+
+# 5. Astronomical Objects\*\*(not included in the homework)
 
 You are tasked with creating a console application which will store and display information about astronomical objects. Each object has a name of a home solar system, a position in the system, a mass in kg, a radius in meters, and a type (star, rocky planet, gas giant, unknown) and a nickname. Only some astronomical objects have a nickname. The name of the home solar system of an object can change (the solar system could be renamed), and the type can ONLY change from unknown to star, rocky planet, or gas giant. Objects of type star always have their position in the system set to 1. The designation of an astronomical object has the format:
 
@@ -199,8 +198,8 @@ The program should store the info in a text file (each time an object is created
 
 Make sure you create the proper classes, constructors, access modifiers and methods for the above task. You should submit your program in a single **.cpp** file, but also add a file which contains input which can be copy-pasted into the console to demonstrate creating astronomical objects and searching for astronomical objects.
 
-1.
-# Splender\*\* (not included in the homework)
+
+# 6. Splender\*\* (not included in the homework)
 
 Splender is a depressed robot who heals his depression by partying and drinking alcohol. To save him from a life of debauchery, his creators have reprogrammed the control system with a more rudimentary intelligence. Unfortunately, he has lost his sense of humor and his former friends have now rejected him.
 
@@ -253,118 +252,46 @@ In this example, Splender will follow this sequence of moves:
 
 ### Examples
 
-| **Input**                                                                                                                     | **Output**                                                                                                                       |
-| ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| 10 10
-
-##########
-
-#        #
-
-#  S   W #
-
-#        #
-
-#  $     #
-
-#        #
-
-#@       #
-
-#        #
-
-#E     N #
-
-########## | SOUTH
-
-SOUTH
-
-EAST
-
-EAST
-
-EAST
-
-EAST
-
-EAST
-
-EAST
-
-NORTH
-
-NORTH
-
-NORTH
-
-NORTH
-
-NORTH
-
-NORTH
-
-WEST
-
-WEST
-
-WEST
-
-WEST
-
-SOUTH
-
-SOUTH |
-| 5 5
-
-#####
-
-#@  #
-
-#   #
-
-#  $#
-
-#####                                                                                        | SOUTH
-
-SOUTH
-
-EAST
-
-EAST                                                                                                         |
-| 8 8
-
-########
-
-\# @    #
-
-#     X#
-
-\# XXX  #
-
-#   XX #
-
-#   XX #
-
-#     $#
-
-########                                         | SOUTH
-
-EAST
-
-EAST
-
-EAST
-
-SOUTH
-
-EAST
-
-SOUTH
-
-SOUTH
-
-SOUTH                                                                        |
-
+| Input      | Output |
+| ---------- | ------ |
+| 10 10      | SOUTH  |
+| ########## | SOUTH  |
+| #        # | EAST   |
+| #  S   W # | EAST   |
+| #        # | EAST   |
+| #  $     # | EAST   |
+| #        # | EAST   |
+| #@       # | EAST   |
+| #        # | NORTH  |
+| #E     N # | NORTH  |
+| ########## | NORTH  |
+|            | NORTH  |
+|            | NORTH  |
+|            | NORTH  |
+|            | WEST   |
+|            | WEST   |
+|            | WEST   |
+|            | WEST   |
+|            | SOUTH  |
+|            | SOUTH  |
+|            |        |
+| 5 5        | SOUTH  |
+| #####      | SOUTH  |
+| #@  #      | EAST   |
+| #   #      | EAST   |
+| #  $#      |        |
+| #####      |        |
+|            |        |
+| 8 8        | SOUTH  |
+| ########   | EAST   |
+| \# @    #  | EAST   |
+| #     X#   | EAST   |
+| \# XXX  #  | SOUTH  |
+| #   XX #   | EAST   |
+| #   XX #   | SOUTH  |
+| #     $#   | SOUTH  |
+| ########   | SOUTH  |
+|            |        |
 
 
 

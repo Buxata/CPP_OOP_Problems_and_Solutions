@@ -4,6 +4,8 @@
 #include <sstream>
 #include <list>
 
+
+// Some initial definitions that actually help the verbosity in my oppinion.
 const int MATRIX_SIZE = 10;
 typedef std::vector <char> Line;
 typedef std::vector <Line> Matrix;
@@ -83,6 +85,7 @@ class Rust{
             }
         }        
     }
+// 
     void expandRust(int i, int j) {
         if (this->canExpand(i + 1, j)) matrix[i + 1][j] = '!';
         if (this->canExpand(i - 1, j)) matrix[i - 1][j] = '!';

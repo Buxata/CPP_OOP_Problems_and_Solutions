@@ -7,6 +7,9 @@
 
 typedef std::set<std::string> Words;
 
+// This is a little helper class I have created, in order to call some 
+// that are probably implemented better in a library, that I don't know of.
+// Currently I do not belive I use it for anything, but I decided to keep it.
 class Helper
 {
 public:
@@ -53,12 +56,18 @@ class Letters
 
 public:
     bool readAndOutput(char token) {
+
+// In the tas kwe have to ignore cases. So I am taking the char to which I am comparing to and
+// getting both the lower and upper values.
         bool output = false;
         char tokenConv = ' ';
         if (islower(token)) tokenConv = toupper(token);
         if (isupper(token)) tokenConv = tolower(token);
 
         for (auto word : words) {
+
+// There are two comparisons which are performed on each cycle. 
+// This can definitely be optimised if I force everithing tobe compared in lowercase.
             for (auto it = word.begin(); it != word.end(); it++) {
                 if (token == *it || tokenConv == *it) {
                     std::cout << word << ' ';
@@ -70,6 +79,7 @@ public:
 	    return output;
     }
 
+// just colleting the input.
     void getInput()
     {
         std::string input;

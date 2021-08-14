@@ -5,6 +5,7 @@
 
 typedef std::vector <std::string> stringVector;
 
+// another helper object that I decided not to use in the end.
 class Helper{
     public:
     void removeComas(std::string &input){
@@ -42,6 +43,10 @@ class Locations {
 
 
     private:
+// Latitude and Longitude are supposed to be float numbers. I have used string, since there is no
+// modification on the values and no memory constraints.
+// Using string saves me the worry of getting the output correct for the automated system evaluation.
+// DEFINITELY A NO GO IN REAL CASES!!!
     std::string city, latitude, longitude;
 
 

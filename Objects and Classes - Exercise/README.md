@@ -366,15 +366,6 @@ SOUTH
 SOUTH                                                                        |
 
 
-![](RackMultipart20210802-4-7x7ju9_html_5f4bed71d10084e8.gif) ![](RackMultipart20210802-4-7x7ju9_html_f24927fd4833cce.gif) ![](RackMultipart20210802-4-7x7ju9_html_bbca58d57aaacb86.gif) ![](RackMultipart20210802-4-7x7ju9_html_851d988b056fb69d.gif) ![](RackMultipart20210802-4-7x7ju9_html_5dcddef054c8d04d.png)
-
-© SoftUni – about.softuni.bg. Copyrighted document. Unauthorized copy, reproduction or use is not permitted.
-
-Follow us:
-
-Page PAGE \* MERGEFORMAT 1 of NUMPAGES \* MERGEFORMAT 1
-
-
 
 
 

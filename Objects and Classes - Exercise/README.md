@@ -252,99 +252,46 @@ In this example, Splender will follow this sequence of moves:
 
 ### Examples
 
-| Input      |
-| ---------- |
-|            |
-| Output     |
-|            |
-|            |
-|            |
-|            |
-| 10         |
-| 10         |
-| ########## |
-| #        # |
-| #  S   W   |
-| #          |
-| #        # |
-| #  $       |
-| #          |
-| #        # |
-| #@       # |
-| #        # |
-| #E     N # |
-| ########## |
-|            |
-|            |
-|            |
-|            |
-| SOUTH      |
-| SOUTH      |
-| EAST       |
-| EAST       |
-| EAST       |
-| EAST       |
-| EAST       |
-| EAST       |
-| NORTH      |
-| NORTH      |
-| NORTH      |
-| NORTH      |
-| NORTH      |
-| NORTH      |
-| WEST       |
-| WEST       |
-| WEST       |
-| WEST       |
-| SOUTH      |
-| SOUTH      |
-|            |
-|            |
-|            |
-|            |
-|            |
-| 5 5        |
-| #####      |
-| #@  #      |
-| #   #      |
-| #  $#      |
-| #####      |
-|            |
-|            |
-|            |
-| SOUTH      |
-| SOUTH      |
-| EAST       |
-| EAST       |
-|            |
-|            |
-|            |
-|            |
-|            |
-| 8 8        |
-| ########   |
-| #          |
-| @    #     |
-| #     X#   |
-| #          |
-| XXX  #     |
-| #   XX #   |
-| #   XX #   |
-| #     $#   |
-| ########   |
-|            |
-|            |
-|            |
-| SOUTH      |
-| EAST       |
-| EAST       |
-| EAST       |
-| SOUTH      |
-| EAST       |
-| SOUTH      |
-| SOUTH      |
-| SOUTH      |
-
+| Input      | Output |
+| ---------- | ------ |
+| 10 10      | SOUTH  |
+| ########## | SOUTH  |
+| #        # | EAST   |
+| #  S   W # | EAST   |
+| #        # | EAST   |
+| #  $     # | EAST   |
+| #        # | EAST   |
+| #@       # | EAST   |
+| #        # | NORTH  |
+| #E     N # | NORTH  |
+| ########## | NORTH  |
+|            | NORTH  |
+|            | NORTH  |
+|            | NORTH  |
+|            | WEST   |
+|            | WEST   |
+|            | WEST   |
+|            | WEST   |
+|            | SOUTH  |
+|            | SOUTH  |
+|            |        |
+| 5 5        | SOUTH  |
+| #####      | SOUTH  |
+| #@  #      | EAST   |
+| #   #      | EAST   |
+| #  $#      |        |
+| #####      |        |
+|            |        |
+| 8 8        | SOUTH  |
+| ########   | EAST   |
+| \# @    #  | EAST   |
+| #     X#   | EAST   |
+| \# XXX  #  | SOUTH  |
+| #   XX #   | EAST   |
+| #   XX #   | SOUTH  |
+| #     $#   | SOUTH  |
+| ########   | SOUTH  |
+|            |        |
 
 
 

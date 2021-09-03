@@ -49,6 +49,9 @@
         "list": "cpp",
         "set": "cpp",
         "unordered_set": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "iomanip": "cpp"
     }
 }

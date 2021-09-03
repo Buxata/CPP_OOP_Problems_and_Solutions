@@ -7,9 +7,9 @@
 			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-g",
-				"${file}",
+				"${fileDirname}/*.cpp",
 				"-o",
-				"${fileDirname}\\..\\build\\${fileBasenameNoExtension}.exe"
+				"${fileDirname}\\..\\..\\..\\build\\${fileBasenameNoExtension}.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
